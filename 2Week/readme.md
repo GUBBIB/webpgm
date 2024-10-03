@@ -7,3 +7,4 @@
    **2번**
       - **[(1) dl태그 활용 페이지](https://gubbib.github.io/webpgm/2Week/107_110pNo1_8/107pNo2/1/index.html)**
       - **[(2) ul태그 활용 페이지](https://gubbib.github.io/webpgm/2Week/107_110pNo1_8/107pNo2/2/index.html)**
+   - **[table태그 활용 페이지](https://gubbib.github.io/webpgm/2Week/107_110pNo1_8/107pNo3/index.html)**
