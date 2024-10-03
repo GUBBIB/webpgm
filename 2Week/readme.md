@@ -26,5 +26,11 @@
 <details>
    <summary>151pOpenChallenge</summary>
 
+   - **[104pOpenChallenge페이지를 시멘틱 태그로 작성하기](https://gubbib.github.io/webpgm/2Week/151pOpenChallenge/index.html)**
+</details>
+
+<details>
+   <summary>153-155p 1번-5번</summary>
+
    
 </details>
