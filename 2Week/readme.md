@@ -1,7 +1,7 @@
 2주차 실습과제를 정리했습니다.
 =======
 <details>
-   <summary>1. 107-110p 1번-8번</summary>
+   <summary>107-110p 1번-8번</summary>
 
    - 1번
       - **[문자 엔터티 활용 페이지](https://gubbib.github.io/webpgm/2Week/107_110pNo1_8/107pNo1/index.html)**
@@ -17,6 +17,9 @@
       - **[a태그 활용 페이지](https://gubbib.github.io/webpgm/2Week/107_110pNo1_8/107pNo5/index.html)**
    - 6번
       - **[ifram태그 활용 페이지](https://gubbib.github.io/webpgm/2Week/107_110pNo1_8/107pNo6/index.html)**
-
+   - 7번
+      - **[audio태그 활용 페이지](https://gubbib.github.io/webpgm/2Week/107_110pNo1_8/107pNo7/index.html)**
+   - 8번
+      - **[video태그 활용 페이지](https://gubbib.github.io/webpgm/2Week/107_110pNo1_8/107pNo8/index.html)**
 </details>
  
