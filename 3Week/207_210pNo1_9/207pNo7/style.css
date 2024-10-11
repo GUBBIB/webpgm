@@ -1,0 +1,10 @@
+div {
+    background-image: url(fig/back.png);
+    width: 150px;
+    height: 250px;
+    background-size: 150px 250px;
+}
+
+div#img:hover {
+    background-image: url(fig/spade-7.png);
+}

@@ -1,0 +1,26 @@
+body {
+    background-color: aquamarine;
+}
+
+h3 {
+    color: green;
+}
+div.help {
+    color: blue;
+}
+div#center {
+    text-align: center;
+    color: blue;
+}
+div#center>span {
+    background-color: yellow;
+}
+div#indent>p {
+    text-indent: 3em;
+}
+div#indent em {
+    color: green;
+}
+div#indent strong {
+    color: red;
+}

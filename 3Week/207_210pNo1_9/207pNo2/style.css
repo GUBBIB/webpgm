@@ -1,0 +1,15 @@
+h3 {
+    text-align: left;
+}
+
+p {
+    background-color: aliceblue;
+    color: brown;
+    font-family: "Lucida Console";
+    font-size: 10px;
+}
+
+span {
+    font-size: 1.5em;
+    text-decoration-line: underline;
+}

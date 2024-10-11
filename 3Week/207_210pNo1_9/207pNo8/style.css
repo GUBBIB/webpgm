@@ -1,0 +1,5 @@
+img {
+    border: 15px solid;
+    border-image: url(fig/checkpattern.png)  30 round;
+    padding: 5px;
+}
