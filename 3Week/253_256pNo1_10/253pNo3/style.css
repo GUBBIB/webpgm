@@ -1,0 +1,8 @@
+p#footer {
+    width: 100%;
+    background-color: violet;
+    color: blue;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
