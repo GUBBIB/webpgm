@@ -1,0 +1,28 @@
+div {
+    border: 1px brown solid;
+    width: 300px;
+}
+h3 {
+    text-align: center;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0px 20px 0px 20px;
+}
+
+ol>li {
+    font: bold italic 35px Helvetica;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+ol>li>span {
+    position:absolute;
+    color: olive;
+}
+
+ol li p {
+    font: 14px Helvetica, Sans-Serif;
+    padding-left: 50px;
+}

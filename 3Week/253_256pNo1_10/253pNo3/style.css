@@ -1,8 +1,11 @@
-p#footer {
-    width: 100%;
-    background-color: violet;
-    color: blue;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
+.green {
+    border: solid greenyellow 1px;
+}
+th {
+    border-bottom: solid black 1px;
+    text-align: left;
+    width: 200px;
+}
+button:hover {
+    color: magenta;
 }

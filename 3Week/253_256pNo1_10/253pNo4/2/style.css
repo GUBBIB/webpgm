@@ -1,0 +1,10 @@
+ul {
+    background-image: url(fig/worldmap.png);
+    padding-right: 10px;
+    color: blue;
+    list-style-type: square;
+}
+
+li:hover {
+    background-color: yellowgreen;
+}

@@ -1,0 +1,10 @@
+
+img.float {
+    width: 100px;
+    height: 100px;
+    float: left;
+    left: 10px;
+    border: solid 1px yellowgreen;
+    padding: 5px;
+    margin: 10px;
+}

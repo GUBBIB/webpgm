@@ -1,0 +1,12 @@
+@keyframes rotate {
+    100% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(-90deg);
+    }
+}
+
+img {
+    animation: rotate 1s  infinite;
+}
