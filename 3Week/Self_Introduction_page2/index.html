@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <section id="header">
-            <h1>SIRINI</h1>
+    <div id="wrapBox">
+        <section id="topMenus">
+            <h1 class="shadowBox">SIRINI</h1>
+
             <nav>
                 <ul>
-                    <li><a href="#">첫화면</a></li>
+                    <li><a href="./">첫화면</a></li>
                     <li><a href="#">웹사이트</a></li>
                     <li><a href="#">블로그</a></li>
                     <li><a href="#">트위터</a></li>
@@ -22,43 +23,68 @@
             </nav>
         </section>
 
-        <section id="intro">
-            <h1>장문용 소개 페이지</h1>
-            <h2>만나서 반갑습니다! 이 페이지는 저를 소개하는 페이지입니다! 
-                이 페이지는 HTML5 기반으로 제작되었으며, 예제용으로 작성되었습니다.
-                아직까지 계속 작업중입니다. 
-                현재 진행상태는 <progress id="nowStep" value="35" max="100">35%</progress> 입니다. 
-                감사합니다!</h2>
-        </section>
+        <header>
+            <hgroup>
+                <h1>장문용 소개 페이지</h1>
+                <h2>만나서 반갑습니다! 이 페이지는 저를 소개하는 페이지입니다! 
+                    이 페이지는 HTML5 기반으로 제작되었으며, 예제용으로 작성되었습니다.
+                    아직까지 계속 작업중입니다. 
+                    현재 진행상태는 <progress id="nowStep" value="35" max="100">35%</progress> 입니다. 
+                    감사합니다!</h2>
+            </hgroup>
+        </header>
 
         <div id="mainContent">
-            <div id="wrap">
-                <div id="basicInfo">
-                    <section>
-                        <h2>기본정보</h2>
-                        <ul>
-                            <li>대진전자통신고 졸업</li>
-                            <li>경성대학교 소프트웨어학과 21학번</li>
-                        </ul>
-                    </section>
-                </div>
-                <div id="techLog">
-                    <section>
-                        <h2>개발이력</h2>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
-                    </section>
-                </div>
+            <div id="basicInfo" class="shadowBox fixWidth">
+                <section>
+                    <hgroup>
+                        <h1>기본정보</h1>
+                    </hgroup>
+
+                    <ul>
+                        <li>대진전자통신고 졸업</li>
+                        <li>경성대학교 소프트웨어학과 21학번 (재학중)</li>
+                        <li>개발 공부중</li>
+                    </ul>
+                </section>
             </div>
-            <figure id="myPhoto">
-                <img src="fig/">
-                <figcaption>장문용 사진</figcaption>
-            </figure>
+
+            <div id="techLog" class="shadowBox fixWidth">
+                <section>
+                    <hgroup>
+                        <h1>현재 목표</h1>
+                    </hgroup>
+
+                    <ul>
+                        <li>SQLD 자격증 따기</li>
+                        <li>시험 공부</li>
+                        <li>조금씩 포트폴리오 작성하기</li>
+                    </ul>
+                </section>
+            </div>
+            
+            <div id="say" class="fixWidth">
+                <section>
+                    <canvas id="canvas" width="500" height="200"></canvas>
+                </section>
+            </div>
+
+            <aside>
+                <figure id="myPhoto">
+                    <img src="fig/spongebob.png" width="200px" height="250px" alt="장문용 사진">
+                    <figcaption>장문용 사진</figcaption>
+                </figure>
+            </aside>
         </div>
-    
+
+        <footer>
+            <div id="copyleft" class="shadowBox">
+                이 문서는 HTML5 예제용으로 작성한 문서이며, 크롬 브라우저에서 테스트 되었습니다. 
+                수정 및 재배포 자유.
+            </div>
+        </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

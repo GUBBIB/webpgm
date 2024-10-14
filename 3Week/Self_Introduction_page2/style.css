@@ -1,66 +1,136 @@
-div.wrapper {
-    width: 85%;
-    margin: 0 auto;
-    text-align: left;
+@font-face {
+    font-family: LOGO_FONT;
+    src: url("fonts/ALISON_.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: MENU_FONT;
+	src: url("fonts/Navi 산하체.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: HEAD_TITLE_FONT;
+	src: url("fonts/yoon수다핑크릴리.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: HEAD_SUB_FONT;
+	src: url("fonts/헤움봄비.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: NORMAL_FONT;
+	src: url("fonts/SM유노윤호.ttf") format("truetype");
+}
+* {
+    font-family: NORMAL_FONT;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
+    color: #2e7f7f;
 }
 
-section#header {
-    border: solid 1px gray;
-    border-radius: 10px;
+hgroup h1 {
+    font-family: HEAD_TITLE_FONT;
+    text-shadow: 1px 1px 1px #aaa;
+    font-size: 32px;
+    color: #4e8f8f;
 }
-#header h1 {
+
+hgroup h2 {
+    font-family: HEAD_SUB_FONT;
+    color: #5e7f7f;
+    text-shadow: 1px 1px 1px #eee;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+aside {
+    position: absolute;
+    width: 200px;
+    top: 0px;
+    right: 0px;
+}
+
+
+#wrapBox {
+    position: relative;
+    width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+#topMenus h1 {
+    font-family: LOGO_FONT;
     font-size: 32px;
     padding: 20px;
     color: #2e4f4f;
     text-shadow: 2px 2px 2px #ccc;
-    display: inline-block;
 }
 
-#header nav {
-    display: inline-block;
-    
+#topMenus ul {
+    position: absolute;
+    top: 8px;
+    right:0px;
+    text-align: right;
+    width: 500px;
+    height: 50px;
+    font-size: 16px;
 }
 
-#header ul {
-    list-style-type: none;
-    display: inline-block;
-
+#topMenus ul li {
+    display: inline;
+    padding-right: 15px;
 }
 
-#header li {
-    display: inline-block;
-    padding: 0 5px;
+#topMenus ul li a {
+    font-family: MENU_FONT;
     font-size: 22px;
     text-shadow: 2px 2px 1px #ddd;
 }
 
-#header a:hover {
+#topMenus ul li a:hover {
     border-bottom: #2eafaf 2px dotted;
     padding-bottom: 3px;
 }
 
-#mainContent section {
-    border: solid 1px gray;
+#nowStep {
+    width: 100px;
+}
+
+#mainContent {
+    position: relative;
+}
+
+#myPhoto img {
+    box-shadow: rgba(0, 0, 100, 0.25) 2px 3px 3px;
+}
+
+#copyleft {
+    padding: 10px;
+    text-align: center;
+    color: #999;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#f2f2f2)); /* 크롬/사파리 브라우저용 */
+
+}
+
+
+.shadowBox {
+    border: #ddd 1px solid;
     border-radius: 10px;
-    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 128, 0.2) 0px 3px 3px;
 }
 
-#mainContent li {
-    margin-left: 25px;
-}
-
-#mainContent h2 {
-    margin-left: 15px;
-}
-
-div#wrap {
-    display: inline-block;
-}
-
-#myPhoto figure {
-    display: inline-block;
+.fixWidth {
+    width: 560px;
+    padding: 0 10px;
+    margin: 0px 0px 20px 0px;
 }
