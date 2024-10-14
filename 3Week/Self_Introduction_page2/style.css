@@ -1,0 +1,66 @@
+div.wrapper {
+    width: 85%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+section#header {
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+#header h1 {
+    font-size: 32px;
+    padding: 20px;
+    color: #2e4f4f;
+    text-shadow: 2px 2px 2px #ccc;
+    display: inline-block;
+}
+
+#header nav {
+    display: inline-block;
+    
+}
+
+#header ul {
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+#header li {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 22px;
+    text-shadow: 2px 2px 1px #ddd;
+}
+
+#header a:hover {
+    border-bottom: #2eafaf 2px dotted;
+    padding-bottom: 3px;
+}
+
+#mainContent section {
+    border: solid 1px gray;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+#mainContent li {
+    margin-left: 25px;
+}
+
+#mainContent h2 {
+    margin-left: 15px;
+}
+
+div#wrap {
+    display: inline-block;
+}
+
+#myPhoto figure {
+    display: inline-block;
+}
