@@ -17,4 +17,5 @@
    - **[:hover 속성 사용 페이지 ](https://gubbib.github.io/webpgm/3Week/207_210pNo1_9/207pNo6/)**
    - **[:hover 속성 응용 페이지](https://gubbib.github.io/webpgm/3Week/207_210pNo1_9/207pNo7/)**
    - **[border 속성 응용 페이지](https://gubbib.github.io/webpgm/3Week/207_210pNo1_9/207pNo8/)**
+   - **[:hover 및 -shadow 속성 응용 페이지](https://gubbib.github.io/webpgm/3Week/207_210pNo1_9/207pNo9/)**
 </details>
