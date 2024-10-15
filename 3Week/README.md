@@ -23,5 +23,11 @@
 <details>
    <summary>249pOpenChallenge</summary>
 
-   - **[]()**
+   - **[CSS3로 꾸미기 응용 페이지](https://gubbib.github.io/webpgm/3Week/249pOpenChallenge/index.html)**
+</details>
+
+<details>
+   <summary>253~256p No1~10</summary>
+
+   - **[display 속성 사용 페이지]()**
 </details>
