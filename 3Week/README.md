@@ -3,7 +3,7 @@
 <details>
    <summary>202p OpenChallenge</summary>
 
-    - **[104pOpenChallenge페이지를 CSS3로 꾸미기](https://gubbib.github.io/webpgm/3Week/202pOpenChallenge/index.html)**
+   - **[104pOpenChallenge페이지를 CSS3로 꾸미기](https://gubbib.github.io/webpgm/3Week/202pOpenChallenge/index.html)**
 </details>
 
 <details>
@@ -18,8 +18,3 @@
    - **[:hover 속성 응용 페이지](https://gubbib.github.io/webpgm/3Week/207_210pNo1_9/207pNo7/)**
    - **[border 속성 응용 페이지](https://gubbib.github.io/webpgm/3Week/207_210pNo1_9/207pNo8/)**
 </details>
-
-
-
-
-- **[]()**
