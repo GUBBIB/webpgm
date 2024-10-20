@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정수 5개 입력받아 역순</title>
+</head>
+<body>
+    <h3>정수 5개 입력받아 역순으로 출력</h3>
+    <hr>
+    
+     <!-- 합병정렬 이용 -->
+     <script>
+        function merge(n, start1, end1, start2, end2){
+            let i = start1; let j = start2; 
+            let k = 0; let x = new Array(end2 - start1 + 1);
+            while(i <= end1 && j <= end2){
+                if(n[i] < n[j]) {
+                    x[k++] = n[j++]; 
+                }
+                else {
+                    x[k++] = n[i++];
+                }
+            }
+            while(i <= end1){
+                x[k++] = n[i++]; 
+            }
+            while(j <= end2){
+                x[k++] = n[j++];
+            }
+            for(let t=0; t<x.length; t++){
+                n[start1 + t] = x[t];
+            }
+        }
+
+        function mergeSort(n, start, end){
+            if(start >= end) return;
+            let m = parseInt(start + (end - start)/2);
+            mergeSort(n, start, m);
+            mergeSort(n, m+1, end);
+            merge(n, start, m, m+1, end);
+        }
+    </script>
+
+    <script>
+        let n = [];
+        for(let i=0; i<5; i++){
+            n[i] = parseInt(prompt("정수 입력"));
+        }
+        document.write("입력된 수의 배열<br>");
+
+        for(let i=0; i<5; i++){
+            document.write(n[i] + " ");
+        }
+        document.write("<br><hr>");
+
+        document.write("역순으로 재정렬된 배열<br>");
+        mergeSort(n, 0, n.length-1);
+
+        for(let i=0; i<5; i++){
+            document.write(n[i] + " ");
+        }
+
+        </script>
+</body>
+</html>
