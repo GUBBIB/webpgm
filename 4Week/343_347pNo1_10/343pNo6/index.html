@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열 분할</title>
+</head>
+<body>
+    <h3>문자열 분할</h3>
+    <hr>
+
+    <script>
+        let str = prompt("문자열 입력")
+        let s_idx=0, e_idx=0, idx=0;
+        let arr = [];
+
+        arr = str.split("&");
+        
+        for(let i=0; i<arr.length; i++){
+            document.write(arr[i] + "<br>");
+        }
+    </script>
+</body>
+</html>

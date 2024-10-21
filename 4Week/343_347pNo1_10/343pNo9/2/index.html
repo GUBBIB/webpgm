@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book 객체 만들기</title>
+</head>
+<body>
+    <h3>book 객체 만들기</h3>
+    <hr>
+
+    <script>
+        let book = {
+            name1 : "HTML5",
+            name2 : "황기태",
+            price : 20000,
+
+            toString : function () {        
+                document.write("book : "+ book.name1 + ", "+ book.name2 + ", "+ book.price);
+        }
+        };
+    </script>
+    <script>
+        book.toString();
+    </script>
+</body>
+</html>

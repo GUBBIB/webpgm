@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book 객체 만들기</title>
+</head>
+<body>
+    <h3>book 객체 만들기</h3>
+    <hr>
+
+    <script>
+        function book(name1, name2, price){
+            this.name1 = name1; 
+            this.name2 = name2;
+            this.price = price;
+
+            this.toString = function () {
+                document.write("book : "+ this.name1 + ", "+ this.name2 + ", "+ this.price);
+            }
+        }
+    </script>
+    <script>
+        let books = new book("HTML5", "황기태", 20000);
+
+        books.toString();
+    </script>
+</body>
+</html>

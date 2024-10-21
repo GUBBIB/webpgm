@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방문 시간에 따라 변하는 배경색</title>
+</head>
+<body>
+    <h3>오전이면 lightskyblue, 오후이면 orange 배경</h3>
+    <hr>
+
+    <script>
+        function day(par) {
+            switch(par){
+            case 0:
+                return "일";
+            case 1:
+                return "월";
+            case 2:
+                return "화";
+            case 3:
+                return "수";
+            case 4:
+                return "목";
+            case 5:
+                return "금";
+            case 6:
+                return "토";
+            }
+        }
+    </script>
+
+    <script>
+        let current = new Date();
+        if(current.getDay() != 0){
+            document.body.style.backgroundColor = "gold";
+        } else {
+            document.body.style.backgroundColor = "pink";
+        }
+        document.write("오늘 : " + current.getDate() + "일,"+ day(current.getDay()) + "요일");
+    </script>
+</body>
+</html>
