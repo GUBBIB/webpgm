@@ -1,0 +1,9 @@
+table {
+    background-color: beige;
+    border: solid 1px purple;
+    color: blue;
+    font-size: 100px;
+}
+table td {
+    padding: 0 20px;
+}
