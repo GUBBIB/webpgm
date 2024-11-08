@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 페이지</title>
+    <!-- Bulma CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #4a90e2;
+        }
+        .navbar a {
+            color: white;
+            font-weight: bold;
+        }
+        .section {
+            padding: 50px 0;
+        }
+        .box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            color: #4a90e2;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar p-3">
+        <div class="container is-fluid flex justify-between">
+            <a class="text-lg font-bold" href="#">내 웹사이트</a>
+            <div>
+                <a href="#home" class="mr-4 hover:underline">홈</a>
+                <a href="#about" class="mr-4 hover:underline">자기소개</a>
+                <a href="#education" class="mr-4 hover:underline">학업 경력</a>
+                <a href="#hobbies" class="mr-4 hover:underline">취미</a>
+                <a href="#contact" class="hover:underline">연락처</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="box">
+                <h2 class="title text-2xl font-bold mb-4">홈</h2>
+                <p>안녕하세요! 여기는 저에 대해 소개하는 자기소개 페이지입니다. 아래 섹션에서 저에 대한 다양한 정보를 확인하실 수 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="box">
+                <h2 class="title text-2xl font-bold mb-4">자기소개</h2>
+                <p>저는 현재 대학교 2학년에 재학 중이며, 목표를 위해 열심히 학업과 다양한 활동을 병행하고 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="box">
+                <h2 class="title text-2xl font-bold mb-4">학업 경력</h2>
+                <p>대학교에서 [전공 이름]을 전공 중이며, 프로젝트와 과제를 통해 지식을 쌓고 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section">
+        <div class="container">
+            <div class="box">
+                <h2 class="title text-2xl font-bold mb-4">취미</h2>
+                <ul class="list-disc list-inside ml-5">
+                    <li>프로그래밍</li>
+                    <li>독서</li>
+                    <li>여행</li>
+                    <li>운동</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="box">
+                <h2 class="title text-2xl font-bold mb-4">연락처</h2>
+                <p>이메일: <a href="mailto:example@example.com" class="text-blue-600 hover:underline">example@example.com</a></p>
+                <p>전화번호: 010-1234-5678</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bulma 및 Tailwind 기본 설정 적용 -->
+</body>
+</html>

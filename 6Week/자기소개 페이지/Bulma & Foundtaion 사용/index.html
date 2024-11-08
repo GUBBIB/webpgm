@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 페이지</title>
+    <!-- Bulma CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    <!-- Foundation CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
+        .section {
+            padding: 50px 0;
+        }
+        .nav-bar {
+            background-color: #00d1b2;
+        }
+        .nav-link {
+            color: white;
+            font-weight: bold;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            color: #00d1b2;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <nav class="navbar container is-fluid">
+            <div class="navbar-brand">
+                <a class="navbar-item title is-4" href="#">내 웹사이트</a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="#home" class="navbar-item nav-link">홈</a>
+                    <a href="#about" class="navbar-item nav-link">자기소개</a>
+                    <a href="#education" class="navbar-item nav-link">학업 경력</a>
+                    <a href="#hobbies" class="navbar-item nav-link">취미</a>
+                    <a href="#contact" class="navbar-item nav-link">연락처</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="box">
+                <h2 class="title is-3">홈</h2>
+                <p>안녕하세요! 여기는 저의 자기소개 페이지입니다. 아래에서 저에 대한 다양한 정보를 확인할 수 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="box">
+                <h2 class="title is-3">자기소개</h2>
+                <p>저는 현재 대학교 2학년에 재학 중입니다. 목표를 위해 열심히 학업과 여러 활동을 병행하고 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="box">
+                <h2 class="title is-3">학업 경력</h2>
+                <p>대학교에서 [전공]을 전공 중입니다. 전공 과목과 여러 프로젝트를 통해 실력을 쌓아가고 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section">
+        <div class="container">
+            <div class="box">
+                <h2 class="title is-3">취미</h2>
+                <ul>
+                    <li>프로그래밍</li>
+                    <li>독서</li>
+                    <li>여행</li>
+                    <li>운동</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="box">
+                <h2 class="title is-3">연락처</h2>
+                <p>이메일: <a href="#">example@example.com</a></p>
+                <p>전화번호: 010-1234-5678</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foundation JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+</body>
+</html>

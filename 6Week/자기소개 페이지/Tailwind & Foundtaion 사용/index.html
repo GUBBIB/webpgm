@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 페이지</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Foundation CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8fafc;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .navbar {
+            background-color: #0e76a8;
+        }
+        .navbar a {
+            color: white;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        .box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            color: #0e76a8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar p-3">
+        <div class="grid-container">
+            <a class="text-xl font-bold" href="#">내 웹사이트</a>
+            <div class="float-right">
+                <a href="#home" class="hover:underline">홈</a>
+                <a href="#about" class="hover:underline">자기소개</a>
+                <a href="#education" class="hover:underline">학업 경력</a>
+                <a href="#hobbies" class="hover:underline">취미</a>
+                <a href="#contact" class="hover:underline">연락처</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="grid-container">
+            <div class="box">
+                <h2 class="title text-2xl font-bold mb-4">홈</h2>
+                <p>안녕하세요! 이 페이지는 저의 자기소개를 담고 있습니다. 아래 각 섹션에서 저에 대한 정보를 더 확인해보세요.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="grid-container">
+            <div class="box">
+                <h2 class="title text-2xl font-bold mb-4">자기소개</h2>
+                <p>저는 현재 대학교 2학년에 재학 중이며, 학업과 다양한 활동을 통해 경험을 쌓아가고 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="grid-container">
+            <div class="box">
+                <h2 class="title text-2xl font-bold mb-4">학업 경력</h2>
+                <p>대학교에서 [전공]을 공부 중입니다. 여러 프로젝트와 과제를 통해 실력을 쌓아가고 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section">
+        <div class="grid-container">
+            <div class="box">
+                <h2 class="title text-2xl font-bold mb-4">취미</h2>
+                <ul class="list-disc list-inside ml-5">
+                    <li>프로그래밍</li>
+                    <li>독서</li>
+                    <li>여행</li>
+                    <li>운동</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="grid-container">
+            <div class="box">
+                <h2 class="title text-2xl font-bold mb-4">연락처</h2>
+                <p>이메일: <a href="mailto:example@example.com" class="text-blue-600 hover:underline">example@example.com</a></p>
+                <p>전화번호: 010-1234-5678</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foundation JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+</body>
+</html>
