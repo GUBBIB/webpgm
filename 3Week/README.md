@@ -35,7 +35,7 @@
 <details>
    <summary>자기소개 페이지 1</summary>
 
-   - **[Introduction Page 1](https://gubbib.github.io/webpgm/3Week/Self_Introduction_page1/index.html)**
+   - **[Introduction Page 1](https://gubbib.github.io/webpgm/3Week/Self_Introduction_page_1/index.html)**
 </details>
 
 <details>
