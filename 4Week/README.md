@@ -1,5 +1,4 @@
 # 4주차 실습과제를 정리했습니다
-=======
 
 <details>
    <summary>303pOpenChallenge</summary>
