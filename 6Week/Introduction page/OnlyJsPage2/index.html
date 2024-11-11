@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 페이지</title>
+</head>
+<body>
+    <script>
+        // 제목 생성
+        let h1 = document.createElement("h1");
+        h1.innerHTML = "JS만을 이용해서 두번째 자기소개 페이지를 만들었습니다.";
+        document.body.appendChild(h1);
+        
+        // hr 추가
+        document.body.appendChild(document.createElement("hr"));
+
+        // 자기소개 섹션 생성 (초기에는 숨김)
+        const introDiv = document.createElement('div');
+        introDiv.innerHTML = `
+            <h2>자기소개</h2>
+            <p>저는 대학교에서 알고리즘, 자료구조, 운영체체 등을 공부하고 있으며, BOJ에서 코딩테스트 준비를 하고 있습니다.<br>
+                    또한 경성대학교 동아리 RASP에서 알고리즘, WEB에 대해서 공부중입니다.</p>
+            <h3>취미</h3>
+            <ul>
+                <li>BOJ 문제풀이</li>
+                <ul>
+                    <li>최근들어 정렬, 탐색에 관련된 문제에 흥미가 생겨 도전하고 있습니다.</li>
+                </ul>
+                <li>기타 연주</li>
+                <ul>
+                    <li>저는 주로 일렉기타를 연주하며, 이 외에도 통기타를 연주하는 것에 재미를 느끼고 있습니다. 이후에는 클래식기타 또한 도전해 볼 생각입니다.</li>
+                </ul>
+                <li>여행</li>
+                <ul>
+                    <li>저는 매년 한 번씩은 혼자 또는 친구들과 함께 국내, 국외 여행을 꼭 가곤합니다. 내년에는 일본의 오사카를 갈 예정입니다.</li>
+                </ul>
+            </ul>
+            
+            <p>저의 이번 목표는 SQLD 자격증에 합격하는 것 입니다.</p>
+        `;
+        document.body.appendChild(introDiv);
+
+    </script>
+</body>
+</html>
