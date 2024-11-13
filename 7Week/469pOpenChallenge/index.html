@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>눈 내리는 사걀의 마을</title>
+    <style>
+        body{
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url(img/snow.jpg);
+        } 
+
+        div.snow {
+            color: white;
+            font-size: 40px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body onload="fall()">
+    
+    <script>
+        let x = new Array(30);
+        let y = new Array(30);
+        let snow = new Array(30);
+        let downSpeed = new Array(30);
+        let windSpeed = new Array(30);
+        let step = new Array(30);
+
+        function fall(){
+            for(let i=0; i<30; i++){
+                y[i] += downSpeed[i];
+                x[i] += Math.cos(windSpeed[i]);
+
+                if(y[i] >= window.innerHeight - 60) {
+                    x[i] = Math.floor(Math.random() * window.innerHeight);
+                    y[i] = 0;
+                    downSpeed[i] = Math.random() * 2 + 2;
+                }
+
+                if(x[i] >= window.innerHeight - 50){
+                    x[i] >= window.innerHeight - 50
+                } else if(x[i] < 0){
+                    x[i] = 50;
+                }
+
+                snow[i].style.top = y[i] + "px";
+                snow[i].style.left = x[i] + "px";
+                windSpeed[i] += step[i];
+            }
+            setTimeout(fall, 50);
+        }
+
+    </script>
+
+    <script>
+        makeSnow();
+
+        function makeSnow(){
+
+            for(let i=0; i<30; i++){
+                x[i] = Math.floor(Math.random() * window.innerWidth - 10);
+                y[i] = Math.floor(Math.random() * window.innerHeight + 10);
+
+                downSpeed[i] = Math.random() * 2 + 2;
+                windSpeed[i] = 1;
+
+                step[i] = Math.random() * 0.1 + 0.05;
+                
+                let divSnow = "<div class = 'snow' id = snow" + i + " style = 'top: " + x[i] + "px; left: " + y[i] + "px'> * </div>";
+                document.write(divSnow);
+                snow[i] = document.getElementById("snow" + i);
+            }
+
+           
+            
+        }
+        
+    </script>
+</body>
+</html>
