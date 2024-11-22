@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포스트잇</title>
+</head>
+<body>
+    <h3>포스트잇</h3>
+    <hr>
+    <form>
+        <label>제목 <input type="text" id="title"></label>
+        <br>
+        <label>
+            메모입력 <br>
+            <textarea id="textarea" rows="5" cols="30"></textarea>
+        </label>
+        <br>
+
+        <input type="button" value="저장" onclick="store()">
+        <input type="button" value="보기" onclick="show()">
+    </form>
+
+    <script>
+        function store(){
+            let title = document.getElementById("title");
+            let textarea = document.getElementById("textarea");
+
+            localStorage.setItem(title.value, textarea.value);
+
+            title.value = "";
+            textarea.value = "";
+        }
+
+        function show(){
+            let newWin = window.open("show.html", "myWin", "width=300, height=400");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세션 스토리지에서 읽기</title>
+</head>
+<body>
+    <h3>세션 스토리지에 구입 리스트 검색</h3>
+    <hr>
+    <form>
+        <label>품목명 : <input type="text" id="name"></label>
+        <label>개수 : <input type="text" id="count"></label>
+        <br>
+        <input type="button" value="검색" onclick="search()">
+    </form>
+
+    <script>
+        function search(){
+            let name = document.getElementById("name").value;
+            let count = localStorage.getItem(name);
+
+            if(count == null){
+                alert("없음");
+                return;
+            }
+
+            document.getElementById("count").value = count;
+        }
+    </script>
+</body>
+</html>

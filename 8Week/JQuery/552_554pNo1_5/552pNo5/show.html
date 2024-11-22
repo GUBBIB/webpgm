@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택한 도시와 음식 보여주기</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 200px;
+            border: 1px solid yellowgreen;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>선택한 도시와 음식 보여주기</h3>
+    <hr>
+    <div id="msg">
+        아무것도 선택하지 않았습니다.
+    </div>
+
+    <script>
+        window.addEventListener("storage", storageEventListener);
+        window.onload = show;
+
+        function storageEventListener(e){
+            show();
+        }
+
+        function show(){
+            let msg = document.getElementById("msg");
+            msg.innerHTML = "";
+            for (let i = 0; i < localStorage.length; i++) {
+                let key = localStorage.key(i);
+                let val = localStorage.getItem(key);
+                if (i == localStorage.length - 1)
+                    msg.innerHTML += (key + "=" + val);
+                else
+                    msg.innerHTML += (key + "=" + val) + "<br>";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일기쓰기</title>
+</head>
+<body>
+    <h3>일기쓰기</h3>
+    <hr>
+    <form >
+        <label>
+            <script>
+                let time = new Date();
+                let year = time.getFullYear();
+                let month = time.getMonth() + 1;
+                let day = time.getDate();
+
+                today_date = `${year}.${month}.${day}`;
+                document.write("오늘 " + today_date);
+            </script>
+            <br>
+            <textarea id="textarea" rows="5" cols="30"></textarea>
+        </label>
+        <br>
+        <input type="button" value="저장" onclick="store()">
+        <input type="button" value="보기" onclick="show()">
+    </form>
+
+    <script>
+        function store(){
+             let textarea = document.getElementById("textarea");
+             localStorage.setItem(today_date, textarea.value);
+
+             textarea.value = "";
+
+        }
+
+        function show(){
+            let newWin = window.open("show.html", "myWin");
+        }
+    </script>
+</body>
+</html>

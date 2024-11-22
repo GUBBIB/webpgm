@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이름과 학번 검색</title>
+</head>
+<body>
+    <h3>이름과 학번 검색</h3>
+    <hr>
+    <form>
+        <label>검색할 이름 <input type="text" id="name"></label>
+        <br>
+        <label>검색된 학번 <input type="text" id="studentID"></label>
+        <input type="button" value="스토리지에서 검색" onclick="search()">
+    </form>
+    <br>
+    <a href="input.html">이름과 학번 저장 페이지로</a>
+
+    <script>
+
+        function search(){
+            let name = document.getElementById("name").value;
+            
+            let studentID = sessionStorage.getItem(name);
+
+            if(studentID == null){
+                alert(studentID + "학생이 없습니다.");
+                return;
+            }
+
+            document.getElementById("studentID").value = studentID;
+        }
+    </script>
+</body>
+</html>
