@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오디오 리스트 연속 재생</title>
+</head>
+<body>
+    <h3>오디오 리스트 연속 재생</h3>
+    <hr>
+    <p>
+        처음 play 버튼을 누르면 리스트에 있는 곡이 연속하여 자동 재생 됩니다. 
+        마우스로 다른 곡을 선택하여 곡이 바뀝니다.
+        next 버튼을 누르면 다음 곡으로 넘어갑니다.
+    </p>
+    <hr>
+    <audio id="audio" controls onended="endPlay()">브라우저가 audio 태그를 지원하지 않습니다.</audio>
+    <br><br>
+
+    <div>
+        <select id="select" size="3" onchange="change()">
+            <option value="media/EmbraceableYou.mp3">Embraceable You</option>
+            <option value="media/MoonGlow.mp3">MoonGlow</option>
+            <option value="media/Aegukga.mp3">Aegukga</option>
+            <option value="media/About That Oldie.mp3">About That Oldie</option>
+            <option value="media/Alternate.mp3">Alternate</option>
+            <option value="media/Bike Rides.mp3">Bike Rides</option>
+            <option value="media/Claudio The Worm.mp3">Claudio The Worm</option>
+            <option value="media/Do Do Do.mp3">Do Do Do</option>
+            <option value="media/Dog and Pony Show.mp3">Dog and Pony Show</option>
+            <option value="media/Get Outside!.mp3">Get Outside!</option>
+            <option value="media/How it Began.mp3">How it Began.mp3</option>
+            <option value="media/If I Had a Chicken.mp3">If I had a Chiken</option>
+            <option value="media/Rainy Day Games.mp3">Raniy Day Games</option>
+            <option value="media/Snack Time.mp3">Snack Time</option>
+            <option value="media/Splashing Around.mp3">Splashing Around</option>
+            <option value="media/Spring In My Step.mp3">Spring In My Step</option>
+            <option value="media/Sugar Zone.mp3">Sugar Zone</option>
+        </select>
+        <input type="button" value="play" onclick="play(0)">
+        <input type="button" value="next" onclick="endPlay()">
+    </div>
+    <br>
+    <div id="nowSong">현재 연주되는 곡명이 보입니다.</div>
+
+    <script>
+        let select = document.getElementById("select");
+        let audio = document.getElementById("audio");
+        let div = document.getElementById("nowSong");
+        let index = 0;
+
+
+
+        function endPlay(){
+            index++;
+            index %= select.length;
+            play(index);
+            select.selectedIndex = index;
+        }
+
+        function play(n){
+            index = n;
+            audio.src = select.options[index].value;
+            audio.load();
+            audio.play();
+            div.innerHTML = select.options[index].value + "를 재생합니다.";
+        }
+
+        function change(){
+            play(select.selectedIndex)
+        }
+    </script>
+</body>
+</html>

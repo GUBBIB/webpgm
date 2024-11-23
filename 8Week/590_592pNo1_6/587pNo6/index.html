@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>워커 태스크 만들기</title>
+</head>
+<body>
+    <h3>곱셈하기</h3>
+    <hr>
+    <form>
+        <input id="first" type="text" size="10"> X
+        <input id="second" type="text" size="10"> =
+        <input type="button" id="calculate" onclick="send()" value="곱하기">
+        <input id="result" type="text" size="10">
+    </form>
+
+    <script>
+        let worker;
+        let first = document.getElementById("first");
+        let second = document.getElementById("second");
+        let result = document.getElementById("result");
+
+
+         worker = new Worker("testWorker.js");
+        console.log("확인");
+        
+
+        
+
+        function send(){
+            let param = {
+                first: first.value,
+                second: second.value,
+            };
+            worker.postMessage(param);
+        }
+
+        worker.onmessage = function (e) {
+            result.value = e.data;
+        }
+
+    </script>
+</body>
+</html>

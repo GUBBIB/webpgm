@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>워커 태스크</title>
+</head>
+<body onload="addWorker()">
+    <h3>학점 매기기</h3>
+    <hr>
+    
+    <button onclick="cal()">점수 입력</button>
+
+    <div id="msg"></div>
+
+    <script>
+        let msg = document.getElementById("msg");
+        let newWorker;
+
+        function addWorker(){
+            newWorker = new Worker("testWorker.js");
+        }
+
+        function cal(){
+            let score = prompt("점수를 숫자로 입력하세요");
+
+            if(score == null || isNaN(score) == true){
+                alert("숫자로 입력하세요");
+                return;
+            }
+
+            if(newWorker == null){
+                alert("워커 태스크가 만들어지지 않음");
+                return;
+            }
+
+            if(parseInt(score) > 100 || parseInt(score) < 0) {
+                alert("점수가 0~100 사이가 아님");
+                return;
+            }
+
+            msg.innerHTML += score;
+
+            newWorker.postMessage(score);
+
+            newWorker.onmessage = function (e) {
+                msg.innerHTML += "=" + e.data + "<br>";
+            }
+
+        }
+
+    </script>
+</body>
+</html>
