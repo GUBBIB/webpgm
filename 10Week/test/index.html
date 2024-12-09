@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINE</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 그냥 내 CSS -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans bg-gray-100">
+
+    <!-- 메뉴바, 헤더 -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">LINE</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-gray-700 hover:text-green-500">Life on LINE</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-green-500">커뮤니케이션 앱</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-green-500">서비스</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="#" class="text-sm text-gray-700 hover:text-green-500">KR</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <section class="relative bg-gray-200 h-screen">
+        <div class="relative z-10 text-center pt-32">
+            <h1 class="text-4xl font-bold text-white">Life on LINE</h1>
+            <p class="mt-4 text-lg text-white">라인은 언제나 사용자와 함께 합니다.</p>
+            <div class="mt-6 flex justify-center space-x-4">
+                <a href="#" class="bg-green-500 text-white px-4 py-2 rounded shadow">App Store</a>
+                <a href="#" class="bg-green-500 text-white px-4 py-2 rounded shadow">Google Play</a>
+                <a href="#" class="bg-green-500 text-white px-4 py-2 rounded shadow">Windows</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 새로운 섹션 -->
+<section class="bg-gray-100 py-8">
+    <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-bold text-gray-700 mb-4">Life on LINE</h2>
+        <p class="text-sm text-gray-600">메신저 앱 그 이상의 경험을 제공합니다.</p>
+        <p class="text-sm text-gray-600">라인은 새로운 인프라 경험, 새로운 커뮤니케이션 경험을 모두에게 전달하고자 합니다.</p>
+    </div>
+</section>
+
+    <!-- Content Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 gap-8">
+            <div class="bg-white p-6 shadow rounded flex items-center">
+                <div class="w-1/2 pr-4">
+                    <h2 class="text-xl font-bold mb-2">LINE NEWS</h2>
+                    <p class="text-gray-700">라인 뉴스를 간편하게 만나보세요!</p>
+                    <a href="#" class="text-green-500 hover:underline mt-4 block">더 보기</a>
+                </div>
+                <div class="w-1/2">
+                    <img src="media/b6df55705210e78a92d45db38d581df1.png" alt="LINE NEWS" class="w-full h-auto object-right">
+                </div>
+            </div>
+    
+            <div class="bg-white p-6 shadow rounded flex items-center flex-row-reverse">
+                <div class="w-1/2 pl-4">
+                    <h2 class="text-xl font-bold mb-2">LINE Healthcare</h2>
+                    <p class="text-gray-700">건강을 위한 서비스</p>
+                    <a href="#" class="text-green-500 hover:underline mt-4 block">더 보기</a>
+                </div>
+                <div class="w-1/2">
+                    <img src="media/1e80dbf3c316bced68c96812234a2371.png" alt="LINE Healthcare" class="w-full h-auto object-left">
+                </div>
+            </div>
+    
+            <div class="bg-white p-6 shadow rounded flex items-center">
+                <div class="w-1/2 pr-4">
+                    <h2 class="text-xl font-bold mb-2">LINE Pay</h2>
+                    <p class="text-gray-700">빠르고 안전한 결제 서비스</p>
+                    <a href="#" class="text-green-500 hover:underline mt-4 block">더 보기</a>
+                </div>
+                <div class="w-1/2">
+                    <img src="media/1ffd0b45263b41335640b479e71c7576.png" alt="LINE Pay" class="w-full h-auto object-right">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="relative bg-cover bg-center flex items-center justify-center" style="background-image: url('media/e8ed41f32061a4f1dc1dc2778a1412a3.png'); height: 320px;">
+        <div class="text-center p-12 rounded-lg">
+            <a href="#" class="text-5xl font-bold text-white">기업 지원</a>
+        </div>
+    </section>
+    
+    <section class="container mx-auto px-4 py-12 text-center">
+        <!-- 서비스 제목 -->
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">서비스</h2>
+    
+        <!-- 서비스 항목 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 service">
+            <a href="#" class="block bg-white shadow rounded p-4 hover:shadow-lg transition text-center">
+                <img src="media/28e883fa1eef1f2e2aca961e12498120.png" alt="LINE" class="mx-auto max-w-full">
+                <p class="text-lg font-semibold text-gray-800 mt-2">LINE</p>
+                <p class="text-sm text-gray-600 mt-1">사람, 정보, 서비스를 연결하는 커뮤니케이션 앱</p>
+            </a>
+            <a href="#" class="block bg-white shadow rounded p-4 hover:shadow-lg transition text-center">
+                <img src="media/5cea53c8dc645bfe2116d5db34837828.png" alt="오픈챗" class="mx-auto max-w-full">
+                <p class="text-lg font-semibold text-gray-800 mt-2">오픈챗</p>
+                <p class="text-sm text-gray-600 mt-1">같은 관심사를 가진 친구들과 즐겁게 대화해요!</p>
+            </a>
+            <a href="#" class="block bg-white shadow rounded p-4 hover:shadow-lg transition text-center">
+                <img src="media/a027f8948dc46e08f8a70d8d12bf21c8.png" alt="라인 망가" class="mx-auto max-w-full">
+                <p class="text-lg font-semibold text-gray-800 mt-2">라인 망가</p>
+                <p class="text-sm text-gray-600 mt-1">인기 있는 최신 만화를 마음껏 감상해요!</p>
+            </a>
+            <a href="#" class="block bg-white shadow rounded p-4 hover:shadow-lg transition text-center">
+                <img src="media/9c93c92defe18300524652ac7a5db6e1(1).png" alt="라인 뮤직" class="mx-auto max-w-full">
+                <p class="text-lg font-semibold text-gray-800 mt-2">라인 뮤직</p>
+                <p class="text-sm text-gray-600 mt-1">최신 음악 트렌드를 만나보세요!</p>
+            </a>
+            <a href="#" class="block bg-white shadow rounded p-4 hover:shadow-lg transition text-center">
+                <img src="media/de017e687a183484706fffbd69e03c52.png" alt="라인 운세" class="mx-auto max-w-full">
+                <p class="text-lg font-semibold text-gray-800 mt-2">라인 운세</p>
+                <p class="text-sm text-gray-600 mt-1">매일 유명한 역술인들과 만날 수 있는 운세 앱</p>
+            </a>
+            <a href="#" class="block bg-white shadow rounded p-4 hover:shadow-lg transition text-center">
+                <img src="media/49acaca80243dc32818677026b2534a2.png" alt="라인 레코즈" class="mx-auto max-w-full">
+                <p class="text-lg font-semibold text-gray-800 mt-2">라인 레코즈</p>
+                <p class="text-sm text-gray-600 mt-1">스트리밍 시대의 디지털 레이블</p>
+            </a>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 LINE Corporation</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
